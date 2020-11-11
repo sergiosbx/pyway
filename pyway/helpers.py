@@ -12,7 +12,7 @@ class Utils():
     @staticmethod
     def subtract(list_a, list_b):
         result = []
-        if list_a and list_b:
+        if list_a:
             checksum_list_b = [b.checksum for b in list_b]
             result = [a for a in list_a if a.checksum not in checksum_list_b]
         return result
